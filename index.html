@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Untukmu Bidadariku</title>
+
+<!-- Fonts: Fraunces (display serif), Caveat (handwritten accent), Work Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Caveat:wght@500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-locked">
+
+<!-- ============================================= -->
+<!-- ENVELOPE OPENING SCENE                         -->
+<!-- ============================================= -->
+<section class="envelope-scene" id="envelopeScene">
+    <div class="envelope-scene__stage">
+
+        <p class="envelope-scene__hint">tap to open</p>
+
+        <div class="envelope" id="envelope">
+            <div class="envelope__shadow"></div>
+
+            <!-- letter card that slides out of the envelope -->
+            <div class="envelope-letter" id="envelopeLetter">
+                <span class="letter-label">Untukmu</span>
+                <h2>Pujaan Hatiku,Belahan Jiwaku</h2>
+                <p>Ada sesuatu untukmu,pencet tombol open yaa</p>
+                <button class="open-letter" id="openLetterBtn" type="button">
+                    <span>Open</span>
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="envelope__back"></div>
+            <div class="envelope__flap"></div>
+            <div class="envelope__front-left"></div>
+            <div class="envelope__front-right"></div>
+
+            <div class="envelope__seal">
+                <i data-lucide="sparkle"></i>
+            </div>
+
+            <span class="envelope__tag">for you</span>
+        </div>
+
+        <div class="envelope-scene__deco envelope-scene__deco--star-1"><i data-lucide="sparkle"></i></div>
+        <div class="envelope-scene__deco envelope-scene__deco--star-2"><i data-lucide="sparkle"></i></div>
+    </div>
+</section>
+
+<!-- ============================================= -->
+<!-- MAIN PAGE                                      -->
+<!-- ============================================= -->
+<div class="site" id="site">
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+        <div class="hero__deco hero__deco--dots" aria-hidden="true"></div>
+        <div class="hero__deco hero__deco--tape" aria-hidden="true"></div>
+
+        <span class="eyebrow eyebrow--hand">perjalanan hubungan kita</span>
+        <h1 class="hero__title">Momen Yang Lucu</h1>
+        <p class="hero__subtitle">ku rangkum disini</p>
+
+        <div class="hero__polaroids" aria-hidden="true">
+            <div class="hero__polaroid hero__polaroid--1">
+                <img src="images/photo-01.jpg" alt="">
+            </div>
+            <div class="hero__polaroid hero__polaroid--2">
+                <img src="images/photo-02.jpg" alt="">
+            </div>
+            <div class="hero__polaroid hero__polaroid--3">
+                <img src="images/photo-03.jpg" alt="">
+            </div>
+        </div>
+
+        <svg class="hero__underline" viewBox="0 0 220 20" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 14 Q 60 2, 110 12 T 218 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 10"/>
+        </svg>
+    </header>
+
+    <!-- POLAROID COLLECTION -->
+    <main>
+    <section class="scrapbook" id="memories">
+
+        <p class="scrapbook__kicker">Kenangan kita</p>
+        <h2 class="scrapbook__title reveal">Momen Paling Indah</h2>
+
+        <!-- Row 1 -->
+        <div class="scrap-row">
+            <figure class="polaroid polaroid--01 reveal" style="--rot:-4deg;">
+                <img src="images/photo-01.jpg" alt="Memory 01">
+                <figcaption>mau sampe </figcaption>
+            </figure>
+
+            <svg class="scrap-arrow scrap-arrow--down" viewBox="0 0 260 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M8 15 C 90 10, 150 90, 250 100" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 11"/>
+                <path d="M250 100 L 236 92 M250 100 L 240 111" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <figure class="polaroid polaroid--02 reveal" style="--rot:3deg;">
+                <img src="images/photo-02.jpg" alt="Memory 02">
+                <figcaption>kapan pun aku</figcaption>
+            </figure>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="scrap-row scrap-row--reverse">
+            <figure class="polaroid polaroid--03 reveal" style="--rot:5deg;">
+                <img src="images/photo-03.jpg" alt="Memory 03">
+                <figcaption>tetap milih kamu</figcaption>
+            </figure>
+
+            <svg class="scrap-arrow scrap-arrow--up" viewBox="0 0 260 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M10 100 C 100 110, 160 20, 252 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 11"/>
+                <path d="M252 12 L 238 8 M252 12 L 244 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <figure class="polaroid polaroid--04 reveal" style="--rot:-3deg;">
+                <img src="images/photo-04.jpg" alt="Memory 04">
+                <figcaption>selamanya tentangmu</figcaption>
+            </figure>
+        </div>
+
+        <div class="scrapbook__note reveal">
+            <span>scroll kebawah nyak</span>
+            <i data-lucide="chevron-down"></i>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="scrap-row">
+            <figure class="polaroid polaroid--05 reveal" style="--rot:-6deg;">
+                <img src="images/photo-05.jpg" alt="Memory 05">
+                <figcaption>waktu yang berharga</figcaption>
+            </figure>
+
+            <svg class="scrap-arrow scrap-arrow--down" viewBox="0 0 260 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M8 20 C 100 8, 140 100, 250 95" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 11"/>
+                <path d="M250 95 L 236 88 M250 95 L 241 107" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <figure class="polaroid polaroid--06 reveal" style="--rot:4deg;">
+                <img src="images/photo-06.jpg" alt="Memory 06">
+                <figcaption>gak bisa kita ulang</figcaption>
+            </figure>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="scrap-row scrap-row--reverse">
+            <figure class="polaroid polaroid--07 reveal" style="--rot:6deg;">
+                <img src="images/photo-07.jpg" alt="Memory 07">
+                <figcaption>hanya bisa melihat gambar</figcaption>
+            </figure>
+
+            <svg class="scrap-arrow scrap-arrow--up" viewBox="0 0 260 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M10 95 C 90 105, 170 15, 252 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 11"/>
+                <path d="M252 18 L 238 14 M252 18 L 243 29" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+
+            <figure class="polaroid polaroid--08 reveal" style="--rot:-5deg;">
+                <img src="images/photo-08.jpg" alt="Memory 08">
+                <figcaption>yang menjadi kenangan indah</figcaption>
+            </figure>
+        </div>
+
+        <div class="scrapbook__deco scrapbook__deco--heart" aria-hidden="true"><i data-lucide="heart"></i></div>
+        <div class="scrapbook__deco scrapbook__deco--star" aria-hidden="true"><i data-lucide="sparkle"></i></div>
+        <div class="scrapbook__deco scrapbook__deco--clip" aria-hidden="true"><i data-lucide="paperclip"></i></div>
+    </section>
+
+    <!-- LONG LETTER -->
+    <section class="letter-section" id="letter">
+
+        <div class="letter-paper reveal">
+
+            <div class="letter-header">
+                <span class="letter-date">01.01.2025</span>
+                <h2>Longtext Untukmu</h2>
+            </div>
+
+            <div class="letter-content">
+
+                <p class="letter-greeting">
+                    Dear Wanita yang kucintai,
+                </p>
+
+                <p>
+                 Sejak pertama kita ketemu,aku tau kau gak sebanding samaku. bahkan seperti mimpi.kau yang seindah itu dan aku yang seburuk ini. tapi aku selalu usaha buat selalu ada buatmu,dan disaat kau tidak baik baik saja aku selalu ada buatmu.
+                </p>
+
+                <p>
+                  Lantas,kenapa selalu ada orang lain dihubungan kita?,aku kurang apa?.sekurang itu kah aku dimatamu?. aku ajak kamu berkembang,tapi usaha kecil orang lain lebih kau anggap besar dari usaha pasanganmu ini sayang?. aku gak sepantas itu kah buatmu?.
+                </p>
+              
+                <p>
+                 Aku sebenarnya apa dimatamu?,aku akuin effort ku memang masih sederhana. tapi aku selalu coba biar kamu selalu dapat apa yang kamu mau, aku harus gimana sayang??. semalu itu ya kamu punya aku?, tapi kenapa kamu bilang aku yang malu punya kamu?. aku bangga punya kamu bahkan aku publish kamu.
+                </p>
+
+                <p>
+                  Aku cuman minta dihargain sayang. aku gak pernah nerapin standar apapun biar kamu jadi cewe yang aku mau. jadi dirimu sendiri begitu kan yang aku bilang?. terus sesusah itu ya hargain aku?. baik buruknya sifat mu aku selalu bersifat manis kan?. tidak ada bagian diriku yang berubah, kecuali ada orang lain yang selalu kamu bahas dihubungan ini.
+                </p>
+
+                <p>
+                  Coba kamu liat foto diatas. selucu itu kita tanpa ada orang lain. semanis itu kalau diingat ingat. aku gatau harus gimana biar bisa balik seperti dulu, semua kucoba biar kamu yakin samaku kalau aku serius dan aku lagi buktiin kalau aku pantas sama kamu.
+                </p>
+
+              <p>
+                Usaha aku gak keliatan sama sekali ya dimatamu?. mungkin orang sebelum aku lebih ngusahain kamu ya?, makanya kamu anggap yang kukasih selama ini kecil dimatamu?. segitu pengennya aku bantuin kamu. bahkan aku coba jadi cowo yang kamu mau. tapi sama sekali gak bikin kamu terkesan kan?. 
+              </p>
+
+              <p>
+                Aku sayang kamu,hargain aku ya. kita sama sama menghargai satu sama lain, love u more. semoga kita satu sama lain bisa jadi menghargai.
+              </p>
+              
+                <p>
+                    Dan jaga hatimu disana, aku tau banyak yang suka padamu, tapi semoga kamu ingat siapa yang selalu ada disampingmu.
+                </p>
+
+            </div>
+
+            <div class="letter-signature">
+                — From u boyfriend
+            </div>
+
+        </div>
+
+    </section>
+    </main>
+
+</div>
+
+<!-- MUSIC PLAYER -->
+<div class="music-player" id="musicPlayer">
+    <button class="music-player__inner" id="musicPlayerToggle" type="button" aria-label="Play or pause the song">
+        <img class="music-player__cover" id="playerCover" src="images/cover.jpg" alt="">
+        <div class="music-player__meta">
+            <span class="music-player__title" id="playerTitle">Our Song</span>
+            <span class="music-player__artist" id="playerArtist">Our Artist</span>
+        </div>
+        <span class="music-player__like" id="playerLike" role="button" aria-label="Save song">
+            <i data-lucide="plus"></i>
+        </span>
+        <span class="music-player__play" id="playerPlayIcon" aria-hidden="true">
+            <i data-lucide="play"></i>
+        </span>
+    </button>
+    <div class="music-player__progress" id="playerProgress">
+        <div class="music-player__progress-fill" id="playerProgressFill"></div>
+    </div>
+    <audio id="audioEl" preload="metadata"></audio>
+</div>
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="bottom-nav" aria-label="Section navigation">
+    <a href="#home" class="bottom-nav__item is-active" data-nav="home">
+        <i data-lucide="house"></i>
+        <span>Home</span>
+    </a>
+    <a href="#memories" class="bottom-nav__item" data-nav="memories">
+        <i data-lucide="image"></i>
+        <span>Memories</span>
+    </a>
+    <a href="#music" class="bottom-nav__item" data-nav="music">
+        <i data-lucide="music"></i>
+        <span>Music</span>
+    </a>
+    <a href="#letter" class="bottom-nav__item" data-nav="more">
+        <i data-lucide="menu"></i>
+        <span>More</span>
+    </a>
+</nav>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
